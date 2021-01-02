@@ -1,0 +1,6 @@
+Rendszer 3 5
+MOGYA 6 3
+IT-szolg 3 4
+WEB_tech 6 4
+Komm_ism 4 5
+Prez_tech 2 5
