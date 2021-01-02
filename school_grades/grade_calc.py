@@ -1,19 +1,24 @@
 def print_table(g):
-    print("\n----------Grades-----------")
+    print("\n----------Grades-----------------------")
+    print("| Name:           | Credit: | Grade:  |")
+    print("---------------------------------------")
     for subj in g:
-        print("| {:15} | {} | {} |".format(
+        print("| {:15} |    {}    |    {}    |".format(
             subj[0], subj[1], subj[2]))
-    print("---------------------------")
+    print("---------------------------------------")
 
 
 def print_mean(g):
     x = 0
+    y = 0
     credit = 0
     for subj in g:
-        credit += int(subj[1])
+        if (int(subj[2]) > 1):
+            credit += int(subj[1])
+        y += int(subj[1])
         x += int(subj[1]) * int(subj[2])
     if(x > 0):
-        print(f"Credit: {credit}, Mean: {x/credit:.2f}\n")
+        print(f"Credit: {credit}, Mean: {x/y:.2f}\n")
 
 
 # open file, create list of subjects
@@ -35,7 +40,7 @@ while(True):
     print_table(grades)
     print_mean(grades)
     print("---> 'add' for adding new subject")
-    print("---> 'delete' for deleting tha last subject")
+    print("---> 'delete' for deleting the last subject")
     print("---> 'done' for ending and calculating")
     keyword = input("\nNext step: ")
     subject = [None, None, None]
