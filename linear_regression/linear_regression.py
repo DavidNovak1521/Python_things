@@ -35,7 +35,7 @@ plt.xlabel('Height (cm)')
 plt.ylabel('Weight (kg)')
 plt.grid(True)
 
-#plt.show()
+plt.show()
 
 # tesztelés
 height = int(input('Magasság -> '))
