@@ -1,0 +1,22 @@
+1 - numpy
+2 - image inverz
+3 - b&w image
+4 - image sum
+5 - mask
+6 - image diff
+7 - star wars
+8 - konvolucio
+9 - canny
+10 - bolya detektalas
+
+11 - zaj szures
+12 - morpho
+13 - morpho
+14 - histogram
+15 - histogram
+16 - egyenes detektalas
+17 - valdo kereses, template matching (sajat modszer)
+18 - valdo kereses, template matching (opencv modszer)
+19 - sarok detektalas
+20 - interpolacio (nagyitas)
+21 - transformaciok

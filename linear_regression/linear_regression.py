@@ -7,20 +7,37 @@ data = genfromtxt('baseball.txt', delimiter=',')
 # x és y tengelyek adatai, a párok első és második tagja
 x = data[:, 0]
 y = data[:, 1]
+print()
+print('x')
+print(x)
+print(type(x))
 
 plt.plot(x, y, marker='o', ls='')
 
 # átlag számítás mind2 tengely adataira
 xmean = x.mean()
 ymean = y.mean()
+print()
+print('xmean')
+print(xmean)
+print(type(xmean))
 
 # minden adatból ki kell vonni az átlagot
 xm = x - xmean
 ym = y - ymean
+print()
+print('xm')
+print(xm)
+print(type(xm))
 
 # optimális modellparaméter meghatározása
+# @ mátrix szorzás
 w = (xm @ ym) / (xm @ xm)
+print()
+print('w')
 print(w)
+print(type(w))
+print()
 
 xx = []
 yy = []
@@ -35,7 +52,7 @@ plt.xlabel('Height (cm)')
 plt.ylabel('Weight (kg)')
 plt.grid(True)
 
-plt.show()
+#plt.show()
 
 # tesztelés
 height = int(input('Magasság -> '))
