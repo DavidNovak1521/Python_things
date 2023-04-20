@@ -1,10 +1,12 @@
 # Smallest multiple
 # 232792560
 # 35s Macbook Air M1
+# it needs to be speeded up
 
 import time
 
 start = time.time()
+
 top = 20
 answer = top
 
@@ -21,4 +23,5 @@ while True:
 
 end = time.time()
 print(f"{int(end - start)}s")
+
 print(answer)
